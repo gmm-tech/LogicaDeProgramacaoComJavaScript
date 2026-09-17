@@ -1,7 +1,7 @@
 alert("Calcule a área do triângulo retângulo")
 
-altura = prompt("Digite a altura: ")
-largura = prompt("Digite a largura: ")
+altura = parseInt(prompt("Digite a altura: "))
+largura = parseInt(prompt("Digite a largura: "))
 
 area = altura * largura
 

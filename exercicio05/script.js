@@ -1,6 +1,6 @@
 alert("Descubra o antecessor")
 
-number = prompt("Digite o número: ")
+number = parseInt(prompt("Digite o número: "))
 
 antecessor = number - 1
 

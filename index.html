@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de lógica de programação com JavaScript</title>
+    <meta name="author" content="Guilherme Miranda de Morais">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        button {
+            width: 110px;
+            height: 90px;
+            color: #ffffff;
+            background-color: #2155ff;
+            border: none;
+            border-radius: 14px;
+            margin: 7px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        button:hover {
+            background-color: #1640cc;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .consoleLog {
+            color: #000000;
+            background-color: #ffff5f;
+        }
+
+        .consoleLog:hover {
+            background-color: #dcdc1c;
+        }
+
+        .terminal-container {
+            margin-top: 30px;
+            max-width: 800px;
+        }
+
+        #output {
+            background-color: #1e1e1e;
+            color: #00ff00;
+            padding: 15px;
+            border-radius: 8px;
+            min-height: 150px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 16px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>Listagem interativa dos exercícios de lógica de programação com JavaScript.</h1>
+    
+    <div>
+        <button id="exercicio1" type="button">Exercício 1</button>
+        <button id="exercicio2" type="button">Exercício 2</button>
+        <button id="exercicio3" type="button">Exercício 3</button>
+        <button id="exercicio4" type="button">Exercício 4</button>
+        <button id="exercicio5" type="button">Exercício 5</button>
+        <button id="exercicio6" type="button">Exercício 6</button>
+        <button id="exercicio7" type="button">Exercício 7</button>
+        <button id="exercicio8" type="button">Exercício 8</button>
+        <button id="exercicio9" type="button">Exercício 9</button>
+        <button id="exercicio10" type="button">Exercício 10</button>
+        <button id="exercicio11" type="button">Exercício 11</button>
+        <button id="exercicio12" type="button">Exercício 12</button>
+        <button id="exercicio13" type="button">Exercício 13</button>
+        <button id="exercicio14" type="button">Exercício 14</button>
+        <button id="exercicio15" type="button">Exercício 15</button>
+        <button id="exercicio16" type="button">Exercício 16</button>
+        <button id="exercicio17" type="button">Exercício 17</button>
+        <button id="exercicio18" type="button">Exercício 18</button>
+        <button id="exercicio19" type="button">Exercício 19</button>
+        <button id="exercicio20" class="consoleLog" type="button" title="A saída deste exercício aparecerá no terminal abaixo">Exercício 20</button>
+        <button id="exercicio21" type="button">Exercício 21</button>
+        <button id="exercicio22" type="button">Exercício 22</button>
+        <button id="exercicio23" type="button">Exercício 23</button>
+        <button id="exercicio24" type="button">Exercício 24</button>
+        <button id="exercicio25" type="button">Exercício 25</button>
+        <button id="exercicio26" class="consoleLog" type="button" title="A saída deste exercício aparecerá no terminal abaixo">Exercício 26</button>
+        <button id="exercicio27" type="button">Exercício 27</button>
+        <button id="exercicio28" class="consoleLog" type="button" title="A saída deste exercício aparecerá no terminal abaixo">Exercício 28</button>
+        <button id="exercicio29" type="button">Exercício 29</button>
+        <button id="exercicio30" type="button">Exercício 30</button>
+        <button id="exercicio31" type="button">Exercício 31</button>
+        <button id="exercicio32" type="button">Exercício 32</button>
+        <button id="exercicio33" type="button">Exercício 33</button>
+        <button id="exercicio34" type="button">Exercício 34</button>
+        <button id="exercicio35" type="button">Exercício 35</button>
+        <button id="exercicio36" class="consoleLog" type="button" title="A saída deste exercício aparecerá no terminal abaixo">Exercício 36</button>
+        <button id="exercicio37" class="consoleLog" type="button" title="A saída deste exercício aparecerá no terminal abaixo">Exercício 37</button>
+        <button id="exercicio38" type="button">Exercício 38</button>
+        <button id="exercicio39" type="button">Exercício 39</button>
+        <button id="exercicio40" class="consoleLog" type="button" title="A saída deste exercício aparecerá no terminal abaixo">Exercício 40</button>
+        <button id="exercicio41" class="consoleLog" type="button" title="A saída deste exercício aparecerá no terminal abaixo">Exercício 41</button>
+        <button id="exercicio42" class="consoleLog" type="button" title="A saída deste exercício aparecerá no terminal abaixo">Exercício 42</button>
+        <button id="exercicio43" type="button">Exercício 43</button>
+        <button id="exercicio44" class="consoleLog" type="button" title="A saída deste exercício aparecerá no terminal abaixo">Exercício 44</button>
+        <button id="exercicio45" class="consoleLog" type="button" title="A saída deste exercício aparecerá no terminal abaixo">Exercício 45</button>
+        <button id="exercicio46" class="consoleLog" type="button" title="A saída deste exercício aparecerá no terminal abaixo">Exercício 46</button>
+        <button id="exercicio47" type="button">Exercício 47</button>
+        <button id="exercicio48" type="button">Exercício 48</button>
+        <button id="exercicio49" type="button">Exercício 49</button>
+        <button id="exercicio50" type="button">Exercício 50</button>
+        <button id="exercicio51" type="button">Exercício 51</button>
+        <button id="exercicio52" type="button">Exercício 52</button>
+        <button id="exercicio53" type="button">Exercício 53</button>
+        <button id="exercicio54" type="button">Exercício 54</button>
+        <button id="exercicio55" type="button">Exercício 55</button>
+        <button id="exercicio56" type="button">Exercício 56</button>
+        <button id="exercicio57" type="button">Exercício 57</button>
+        <button id="exercicio58" type="button">Exercício 58</button>
+        <button id="exercicio59" type="button">Exercício 59</button>
+        <button id="exercicio60" type="button">Exercício 60</button>
+        <button id="exercicio61" type="button">Exercício 61</button>
+        <button id="exercicio62" type="button">Exercício 62</button>
+        <button id="exercicio63" type="button">Exercício 63</button>
+        <button id="exercicio64" type="button">Exercício 64</button>
+        <button id="exercicio65" type="button">Exercício 65</button>
+        <button id="exercicio66" type="button">Exercício 66</button>
+        <button id="exercicio67" type="button">Exercício 67</button>
+        <button id="exercicio68" type="button">Exercício 68</button>
+        <button id="exercicio69" type="button">Exercício 69</button>
+        <button id="exercicio70" type="button">Exercício 70</button>
+        <button id="exercicio71" type="button">Exercício 71</button>
+        <button id="exercicio72" type="button">Exercício 72</button>
+        <button id="exercicio73" type="button">Exercício 73</button>
+        <button id="exercicio74" type="button">Exercício 74</button>
+        <button id="exercicio75" type="button">Exercício 75</button>
+        <button id="exercicio76" class="consoleLog" type="button" title="A saída deste exercício aparecerá no terminal abaixo">Exercício 76</button>
+        <button id="exercicio77" type="button">Exercício 77</button>
+        <button id="exercicio78" type="button">Exercício 78</button>
+        <button id="exercicio79" type="button">Exercício 79</button>
+        <button id="exercicio80" type="button">Exercício 80</button>
+    </div>
+
+    <section class="terminal-container">
+        <h2>Saída (Console):</h2>
+        <pre id="output">Clique em um exercício para ver o resultado aqui.</pre>
+    </section>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
